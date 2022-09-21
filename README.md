@@ -1,4 +1,4 @@
-# The-Sound-of-Fourier-Transform
+# Audio Exploration Using Fourier Transforms
 Exploring how Fourier transforms can help us understand human sounds through the Laurel/Yanny audio clip
 
 ### Motivation
