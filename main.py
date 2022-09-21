@@ -104,20 +104,3 @@ def getSpectogram(data):
 
  save_wav_file(data, "temp")
  transformed_data = np.fft.fft(data)
-
-
- # thresholds = [42000]
- # for threshold in thresholds:
- #     curr_high_transformed = transformed_data.copy()
- #     # curr_high_transformed10urr_high_transformed > threshold] = 0
- #     curr_high_transformed[:threshold] = 0
- #     curr_high_transformed[:43008 - threshold] = 0
- #     curr_low_transformed = transformed_data.copy()
- #     # curr_low_transformed[curr_low_transformed < threshold] = 0
- #     curr_low_transformed[threshold:] = 0
- #     curr_low_transformed[:43008 - threshold] = 0
- #     curr_high_transformed_reverted = np.fft.ifft(curr_high_transformed)
- #     curr_low_transformed_reverted = np.fft.ifft(curr_low_transformed)
- #     save_wav_file(curr_high_transformed_reverted, "zero_above_sym_" + str(threshold))
- #     save_wav_file(curr_low_transformed_reverted, "zero_below_sym_" + str(threshold), low=True)
- #
